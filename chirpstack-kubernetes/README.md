@@ -1,5 +1,3 @@
-
-# Adapt a fog computing platform based on LoRa wireless access networks which was developed as part of the FogGuru European project (http://www.fogguru.eu/living-lab/) for a new use case 
 # Deploy chirpstack and software stack with kubernetes
 
 ### Replace your cluster ip with [myclusterIP] value
