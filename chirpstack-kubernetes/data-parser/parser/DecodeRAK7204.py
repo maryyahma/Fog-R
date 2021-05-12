@@ -1,30 +1,3 @@
-# Decode decodes an array of bytes into an object=payload_dict.
-#  - fPort contains the LoRaWAN fPort number
-#  - bytes is an array of bytes, e.g. [255, 230, 255, 0]
-# The function must return an object=payload_dict, e.g. {"temperature": 22.5}
-
-
-def DecodeRAK7204(fPort, Bytes):
-    decoded = {}
-    hexString = bin2HexStr(Bytes)
-    return rakSensorDataDecode(hexString)
-
-
-# convert array of bytes to hex string.
-# e.g: 0188053797109D5900DC140802017A0768580673256D0267011D040214AF0371FFFFFFDDFC2E
-
-def bin2HexStr(bytesArr):
-    string = ""
-    for i in range(0, len(bytesArr)):
-        tmp = format( bytesArr[i] & 0xff , 'x')
-
-        if (len(tmp) == 1):
-            tmp = "0" + tmp
-
-        string = string + tmp
-
-    return string
-
 
 # convert string to short integer
 
@@ -41,7 +14,7 @@ def parseTriple(string, base):
 
 
 # decode Hex sensor string data to object
-def rakSensorDataDecode(hexStr):
+def DecodeRAK7204(hexStr):
     string = hexStr
     payload_dict = {}
 
