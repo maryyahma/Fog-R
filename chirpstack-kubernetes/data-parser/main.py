@@ -82,7 +82,7 @@ def data_parser(payload_dict):
     elif sensor_type == "indoor_env":
         mqtt_dict = indoor_env(data_hex)
     elif sensor_type == "DecodeRAK7204":
-        mqtt_dict = rakSensorDataDecode(hexStr) #for sensor in my case. sensor gives array of bytes (fPort, Bytes)and there are'DecodeRAK7204'function and then'rakSensorDataDecode' function to convert them into objects.
+        mqtt_dict = DecodeRAK7204(hexStr) #for sensor in my case. sensor gives array of bytes (fPort, Bytes)and there are'DecodeRAK7204'function and then'rakSensorDataDecode' function to convert them into objects.
 
     mqtt_message['SensorData'] = mqtt_dict
     
