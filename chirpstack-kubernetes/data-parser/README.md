@@ -1,3 +1,5 @@
+Adapt a fog computing platform based on LoRa wireless access networks which was developed as part of the FogGuru European project (http://www.fogguru.eu/living-lab/) for a new use case
+
 This is an application for parsing data collected from sensors in La Marina Valencia
 
 It subscribes to the MQTT where the chirpstack application server publishes to, then 
