@@ -63,4 +63,4 @@ spec:
   selector:
     app: prometheus
   externalIPs:
-  - $myclusterIP
+  - 131.254.150.144 
