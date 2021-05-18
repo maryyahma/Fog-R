@@ -63,4 +63,4 @@ spec:
   selector:
     app: prometheus
   externalIPs:
-  - 131.254.150.144 
+  - 128.93.176.202
