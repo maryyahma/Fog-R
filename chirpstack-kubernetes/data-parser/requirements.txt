@@ -1,5 +1,6 @@
 setuptools==24.2.0
 numpy==1.15.4
+Cython==0.29.21
 python-dateutil==2.7.3
 Pytz==2017.2
 pandas==1.1.3
