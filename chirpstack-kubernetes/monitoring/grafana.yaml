@@ -61,5 +61,5 @@ spec:
       nodePort: 31000
   selector:
     app: grafana
-  externalIPs:
-  - 128.93.176.202
+  #externalIPs:
+ # - 128.93.176.202
