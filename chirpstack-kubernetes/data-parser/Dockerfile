@@ -11,5 +11,5 @@ ENV MQTT_SERVER "localhost"
 ENV LOCAL_INFLUXDB ""
 #ENV CENTRAL_INFLUXDB ""
 
-CMD [ "sh", "-c", "python main.py $MQTT_SERVER $LOCAL_INFLUXDB"]
+CMD ["sh", "-c", "python main.py $MQTT_SERVER $LOCAL_INFLUXDB"]
 
