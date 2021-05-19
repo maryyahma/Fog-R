@@ -62,5 +62,5 @@ spec:
     nodePort: 30003
   selector:
     app: prometheus
-  externalIPs:
-  - 128.93.176.202
+ # externalIPs:
+ # - 128.93.176.202
