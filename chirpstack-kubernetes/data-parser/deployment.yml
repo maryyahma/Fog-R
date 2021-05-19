@@ -22,5 +22,5 @@ spec:
           value: mosquitto
         - name: LOCAL_INFLUXDB
           value: influx
-        - name: CENTRAL_INFLUXDB
-          value: "128.93.176.202"
+     #   - name: CENTRAL_INFLUXDB
+       #   value: "128.93.176.202"
