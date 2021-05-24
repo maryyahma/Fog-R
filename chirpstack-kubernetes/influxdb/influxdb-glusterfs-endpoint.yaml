@@ -9,17 +9,17 @@ subsets:
   - port: 49154
     protocol: TCP
 - addresses:
-  - ip: 192.168.9.141
+  - ip: 131.254.150.141
   ports:
   - port: 49154
     protocol: TCP
 - addresses:
-  - ip: 192.168.9.142
+  - ip: 131.254.150.142
   ports:
   - port: 49154
     protocol: TCP
 - addresses:
-  - ip: 192.168.9.143
+  - ip: 131.254.150.143
   ports:
   - port: 49154
     protocol: TCP
