@@ -4,47 +4,47 @@ metadata:
   name: postgre-gluster
 subsets:
 - addresses:
-  - ip: 192.168.9.21
+  - ip: 131.254.150.140
   ports:
   - port: 49153
     protocol: TCP
 - addresses:
-  - ip: 192.168.9.22
+  - ip: 131.254.150.141
   ports:
   - port: 49153
     protocol: TCP
 - addresses:
-  - ip: 192.168.9.23
+  - ip: 131.254.150.142
   ports:
   - port: 49153
     protocol: TCP
 - addresses:
-  - ip: 192.168.9.24
+  - ip: 131.254.150.143
   ports:
   - port: 49153
     protocol: TCP
-- addresses:
-  - ip: 192.168.9.25
-  ports:
-  - port: 49153
-    protocol: TCP
-- addresses:
-  - ip: 192.168.9.26
-  ports:
-  - port: 49153
-    protocol: TCP
-- addresses:
-  - ip: 192.168.9.27
-  ports:
-  - port: 49153
-    protocol: TCP
-- addresses:
-  - ip: 192.168.9.28
-  ports:
-  - port: 49153
-    protocol: TCP
-- addresses:
-  - ip: 192.168.9.29
-  ports:
-  - port: 49153
-    protocol: TCP
+#- addresses:
+ # - ip: 192.168.9.25
+  #ports:
+  #- port: 49153
+   # protocol: TCP
+#- addresses:
+ # - ip: 192.168.9.26
+ # ports:
+ # - port: 49153
+ #   protocol: TCP
+#- addresses:
+ # - ip: 192.168.9.27
+ # ports:
+  #- port: 49153
+  #  protocol: TCP
+#- addresses:
+ # - ip: 192.168.9.28
+  #ports:
+  #- port: 49153
+  #  protocol: TCP
+#- addresses:
+#  - ip: 192.168.9.29
+ #ports:
+ # - port: 49153
+ #   protocol: TCP
