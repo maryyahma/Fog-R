@@ -8,7 +8,6 @@ from influxdb import InfluxDBClient
 from datetime import datetime
 
 from parser.DecodeRAK7204 import DecodeRAK7204
-from parser.smart_water import smart_water
 from parser.people_counter import people_counter
 from parser.wind import wind
 from parser.traffic_counter import traffic_counter
