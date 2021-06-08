@@ -63,16 +63,16 @@ def data_parser(payload_dict):
     data = payload_dict['data']
     data_hex = base64.b64decode(data).hex()
 
-    if sensor_type == 'smart_water':
-        protocol_file = './parser/smart_water.csv'
-        mqtt_dict = smart_water(data_hex, protocol_file)
-    elif sensor_type == 'smart_water_lon':
-        protocol_file = './parser/smart_water_lon.csv'
-        mqtt_dict = smart_water(data_hex, protocol_file)  
-    elif sensor_type == 'outdoor_env':
-        protocol_file = './parser/outdoor_env.csv'
-        mqtt_dict = smart_water(data_hex, protocol_file)          
-    elif sensor_type == 'people_counter':
+   # if sensor_type == 'smart_water':
+        # protocol_file = './parser/smart_water.csv'
+       # mqtt_dict = smart_water(data_hex, protocol_file)
+    #elif sensor_type == 'smart_water_lon':
+        #protocol_file = './parser/smart_water_lon.csv'
+        #mqtt_dict = smart_water(data_hex, protocol_file)  
+   # elif sensor_type == 'outdoor_env':
+     #   protocol_file = './parser/outdoor_env.csv'
+      #  mqtt_dict = smart_water(data_hex, protocol_file)          
+    if sensor_type == 'people_counter':
         mqtt_dict = people_counter(data_hex)
     elif sensor_type == 'wind':
         mqtt_dict = wind(data_hex)
