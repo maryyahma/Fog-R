@@ -22,7 +22,7 @@ def DecodeRAK7204(hexStr):
         flag = int(string[0:4], 16)
 
         if flag == 0x0768: # Humidity
-            payload_dict['humidity'] = float(("{:.1f}".format(parseShort(string[4:6], 16) * 0.01 / 2) * 100)) + "%RH" # unit:%RH
+            payload_dict['humidity'] = str(float(("{:.1f}".format(parseShort(string[4:6], 16) * 0.01 / 2))) * 100) + "%RH" # unit:%RH
             string = string[6:]
         elif flag == 0x0673: # Atmospheric pressure
             payload_dict['barometer'] = float("{:.2f}".format((parseShort(string[4:8], 16) * 0.1))) + "hPa" # unit:hPa
@@ -44,7 +44,7 @@ def DecodeRAK7204(hexStr):
             payload_dict['gasResistance'] = float("{:.2f}".format((parseShort(string[4:8], 16) * 0.01))) + "kiloohm" # unit:kiloohm
             string = string[8:]
         elif flag == 0x0802: # Battery Voltage
-            payload_dict['battery'] = float("{:.2f}".format((parseShort(string[4:8], 16) * 0.01))) + "V" # unit:V
+            payload_dict['battery'] = str(float("{:.2f}".format((parseShort(string[4:8], 16) * 0.01)))) + "V" # unit:V
             string = string[8:]
         elif flag == 0x0586: # gyroscope
             payload_dict['gyroscope_x'] = float("{:.2f}".format((parseShort(string[4:8], 16) * 0.01))) + u"\u00b0" + "/s" # unit:Degree/s
