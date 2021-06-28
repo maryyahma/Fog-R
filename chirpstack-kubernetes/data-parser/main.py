@@ -81,7 +81,7 @@ def data_parser(payload_dict):
     elif sensor_type == "indoor_env":
         mqtt_dict = indoor_env(data_hex)
     elif sensor_type == "DecodeRAK7204":
-        mqtt_dict = DecodeRAK7204(hexStr) #for sensor in my case. 
+        mqtt_dict = DecodeRAK7204(data_hex) #for sensor in my case. 
     mqtt_message['SensorData'] = mqtt_dict
     
 
@@ -145,9 +145,9 @@ def on_message(client, userdata, msg):
             print("INFO: Update influxdb in fog")
             influxdb_update(local_influxdb, influxdb_dict)
         
-        if central_influxdb != 'disable':
-            print("INFO: Update influxdb in cloud")
-            influxdb_update(central_influxdb, influxdb_dict)
+        #if central_influxdb != 'disable':
+            #print("INFO: Update influxdb in cloud")
+            #influxdb_update(central_influxdb, influxdb_dict)
 
     else:
         print("WARNING: Sensor data is wrong")
@@ -165,17 +165,17 @@ if __name__ == '__main__':
     parser.add_argument('local_influxdb', type=str,
                         help = 'the ip address of influxdb in a fog cluster')
 
-    parser.add_argument('central_influxdb', type=str, 
-                        help='the ip address of central influxdb')
+    #parser.add_argument('central_influxdb', type=str, 
+                        #help='the ip address of central influxdb')
     
     args = parser.parse_args()
     
-    global mqtt_server, local_influxdb, central_influxdb
+    global mqtt_server, local_influxdb
     mqtt_server = args.mqtt_server
     local_influxdb = args.local_influxdb
-    central_influxdb = args.central_influxdb
+    #central_influxdb = args.central_influxdb
     
-    print("INFO: Settings ", mqtt_server, local_influxdb, central_influxdb)
+    print("INFO: Settings ", mqtt_server, local_influxdb)
     
 
     client = mqtt.Client()
