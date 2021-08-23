@@ -1,4 +1,4 @@
-# Adapting a fog computing platform based on LoRa wireless access networks which was developed as part of the FogGuru European project (http://www.fogguru.eu/living-lab/) for a new use case.
+# Adapting The LivingFog platform developed as part of the FogGuru European project (http://www.fogguru.eu/living-lab/) for a new use case.
 # kube-deploy-lora
 ### Preparing the Raspberry Pis for running ansible
 
