@@ -1,4 +1,4 @@
-# Adapting The LivingFog platform developed as part of the FogGuru European project (http://www.fogguru.eu/living-lab/) for a new use case.
+# Adapting the LivingFog platform developed as part of the FogGuru European project (http://www.fogguru.eu/living-lab/) for a new use case.
 # kube-deploy-lora
 ### Preparing the Raspberry Pis for running ansible
 
